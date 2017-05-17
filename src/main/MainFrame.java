@@ -11,10 +11,16 @@ import java.awt.*;
 public class MainFrame extends JFrame {
     ControlPanel controlPanel;
     DesignPanel designPanel;
+
     public MainFrame() {
         super("Swing Designer");
         init();
     }
+
+    public static void main(String[] args) {
+        MainFrame mainFrame = new MainFrame();
+    }
+
     private void init() {
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         this.getContentPane().setLayout(new FlowLayout(FlowLayout.LEFT));
@@ -28,9 +34,5 @@ public class MainFrame extends JFrame {
 
         this.pack();
         this.setVisible(true);
-    }
-
-    public static void main (String[] args){
-        MainFrame mainFrame = new MainFrame();
     }
 }
