@@ -75,8 +75,4 @@ public class ControlPanel extends JPanel {
         }
         return null;
     }
-
-    private void setComponentText(JComponent comp, String text) {
-        //...implement this method
-    }
 }
