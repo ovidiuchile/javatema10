@@ -68,54 +68,5 @@ class ControlPanel extends JPanel {
             comp.setPreferredSize(new Dimension(100, 30));
         }
         return comp;
-
-        /*
-        try {
-            Class factory = Class.forName("javax.swing." + className);
-            Class[] signature = new Class[]{String.class};
-            Constructor ctor = factory.getConstructor(signature);
-            JComponent comp = (JComponent) ctor.newInstance(text);
-            comp.setVisible(true);
-            comp.setSize(100, 30);
-            comp.setPreferredSize(new Dimension(100, 30));
-            return comp;
-        }
-        try {
-            Class factory = Class.forName("javax.swing." + className);
-            Class[] signature = new Class[]{String.class};
-            Constructor ctor = factory.getConstructor(signature);
-            JComponent comp = (JComponent) ctor.newInstance(text);
-            comp.setVisible(true);
-            comp.setSize(100, 30);
-            comp.setPreferredSize(new Dimension(100, 30));
-            return comp;
-        } catch (ClassNotFoundException | IllegalAccessException | InstantiationException | InvocationTargetException e) {
-            e.printStackTrace();
-        } catch (NoSuchMethodException e) {
-            Class factory = null;
-            JComponent comp = null;
-            try {
-                factory = Class.forName("javax.swing." + className);
-                comp = (JComponent) factory.newInstance();
-                comp.setVisible(true);
-                comp.setSize(100, 30);
-                comp.setPreferredSize(new Dimension(100, 30));
-            } catch (InstantiationException | IllegalAccessException | ClassNotFoundException e1) {
-                e1.printStackTrace();
-            }
-            return comp;
-        }
-        return null;
-        catch (InstantiationException e) {
-            e.printStackTrace();
-        } catch (InvocationTargetException e) {
-            e.printStackTrace();
-        } catch (NoSuchMethodException e) {
-            e.printStackTrace();
-        } catch (IllegalAccessException e) {
-            e.printStackTrace();
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        }*/
     }
 }
