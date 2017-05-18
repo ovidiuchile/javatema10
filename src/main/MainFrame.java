@@ -9,10 +9,10 @@ import java.awt.*;
  * @author ochile
  */
 public class MainFrame extends JFrame {
-    ControlPanel controlPanel;
+    private ControlPanel controlPanel;
     DesignPanel designPanel;
 
-    public MainFrame() {
+    private MainFrame() {
         super("Swing Designer");
         init();
     }
@@ -22,7 +22,7 @@ public class MainFrame extends JFrame {
     }
 
     private void init() {
-        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         this.getContentPane().setLayout(new FlowLayout(FlowLayout.LEFT));
         this.getContentPane().setPreferredSize(new Dimension(1000, 700)); //660, 651
 
